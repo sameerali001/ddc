@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { db } = require("../db");
 
-const JWT_SECRET = process.env.JWT_SECRET || "doon_defence_college_super_secret_key_123";
+const JWT_SECRET = process.env.JWT_SECRET || "dehradun_defence_academy_super_secret_key_123";
 
 // Helper to get or seed admin
 async function getAdminUser(email) {

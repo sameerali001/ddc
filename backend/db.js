@@ -13,7 +13,7 @@ let isFallbackMode = false;
 
 // Connect to MongoDB
 const connectDB = async () => {
-  const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/doon_defence";
+  const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/dehradun_defence";
   try {
     mongoose.set("strictQuery", true);
     await mongoose.connect(mongoURI, {
