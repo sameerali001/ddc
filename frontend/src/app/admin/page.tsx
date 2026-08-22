@@ -1,5 +1,7 @@
 "use client";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import {
@@ -48,7 +50,7 @@ export default function AdminPage() {
   const fetchAdminData = async () => {
     try {
       // Fetch inquiries
-      let res = await fetch("http://localhost:5000/api/inquiries", {
+      let res = await fetch(`${API_URL}/api/inquiries`, {
         headers: { "Authorization": `Bearer ${token}` }
       });
       if (res.ok) {
@@ -57,7 +59,7 @@ export default function AdminPage() {
       }
 
       // Fetch public collections for CMS tables
-      res = await fetch("http://localhost:5000/api/public/data");
+      res = await fetch(`${API_URL}/api/public/data`);
       if (res.ok) {
         const data = await res.json();
         setCourses(data.courses || []);
@@ -90,7 +92,7 @@ export default function AdminPage() {
     e.preventDefault();
     setAuthError("");
     try {
-      const res = await fetch("http://localhost:5000/api/auth/login", {
+      const res = await fetch(`${API_URL}/api/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(loginForm)
@@ -128,7 +130,7 @@ export default function AdminPage() {
       return;
     }
     try {
-      const res = await fetch(`http://localhost:5000/api/inquiries/${id}`, {
+      const res = await fetch(`${API_URL}/api/inquiries/${id}`, {
         method: "DELETE",
         headers: { "Authorization": `Bearer ${token}` }
       });
@@ -152,7 +154,7 @@ export default function AdminPage() {
       return;
     }
     try {
-      const res = await fetch("http://localhost:5000/api/admin/courses", {
+      const res = await fetch(`${API_URL}/api/admin/courses`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -183,7 +185,7 @@ export default function AdminPage() {
       return;
     }
     try {
-      const res = await fetch("http://localhost:5000/api/admin/faculty", {
+      const res = await fetch(`${API_URL}/api/admin/faculty`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -214,7 +216,7 @@ export default function AdminPage() {
       return;
     }
     try {
-      const res = await fetch("http://localhost:5000/api/admin/blogs", {
+      const res = await fetch(`${API_URL}/api/admin/blogs`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

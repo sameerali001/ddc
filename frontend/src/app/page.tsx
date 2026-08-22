@@ -1,5 +1,7 @@
 "use client";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+
 import React, { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -107,7 +109,7 @@ export default function HomePage() {
   useEffect(() => {
     async function loadData() {
       try {
-        const res = await fetch("http://localhost:5000/api/public/data");
+        const res = await fetch(`${API_URL}/api/public/data`);
         if (res.ok) {
           const fetched = await res.json();
           // Ensure we merge fetched keys safely
@@ -165,7 +167,7 @@ export default function HomePage() {
     setIsSubmitting(true);
     setInquiryStatus({ type: null, message: "" });
     try {
-      const res = await fetch("http://localhost:5000/api/inquiries", {
+      const res = await fetch(`${API_URL}/api/inquiries`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(inquiryForm),
