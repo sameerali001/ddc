@@ -37,7 +37,7 @@ app.use("/api/public", async (req, res, next) => { await ensureDB(); next(); }, 
 // Default Root Route
 app.get("/", (req, res) => {
   res.json({
-    message: "Doon Defence College API Server is running on Vercel.",
+    message: "Dehradun Defence Academy API Server is running on Vercel.",
     status: "ok"
   });
 });

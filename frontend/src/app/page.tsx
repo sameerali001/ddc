@@ -19,7 +19,7 @@ import {
 // Inline Static Fallbacks in case Backend is offline
 const BACKUP_DATA = {
   hero: {
-    academyName: "DOON DEFENCE COLLEGE",
+    academyName: "DEHRADUN DEFENCE ACADEMY",
     tagline: "WHERE DISCIPLINE MEETS DESTINY",
     description: "India's premier defence training academy. Empowering NDA, CDS, AFCAT, and SSB aspirants through world-class academic preparation, rigorous physical training, and character development.",
     ctaPrimaryText: "Apply Now",
@@ -28,9 +28,9 @@ const BACKUP_DATA = {
   about: {
     mission: "To nurture and guide young patriots, instilling core military values of integrity, loyalty, and courage, and ensuring they excel both academically and physically to lead the Indian Armed Forces.",
     vision: "To be recognized globally as the ultimate nurturing ground for future defence leaders, combining top-class education, premium physical conditioning, and leadership training.",
-    directorMessage: "At Doon Defence College, we don't just train students to pass exams. We build their character, physical endurance, and intellectual edge to ensure they stand tall as future commanders of India's Army, Navy, and Air Force.",
+    directorMessage: "At Dehradun Defence Academy, we don't just train students to pass exams. We build their character, physical endurance, and intellectual edge to ensure they stand tall as future commanders of India's Army, Navy, and Air Force.",
     directorName: "Brig. (Retd.) S. P. Rawat",
-    directorTitle: "Managing Director, Doon Defence College",
+    directorTitle: "Managing Director, Dehradun Defence Academy",
     stats: [
       { label: "Selections", value: "2,500+" },
       { label: "Expert Officers", value: "15+" },
@@ -58,12 +58,12 @@ const BACKUP_DATA = {
     { id: "g6", title: "Obstacle Drill", category: "PT", image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=600" }
   ],
   testimonials: [
-    { id: "t1", studentName: "Cadet Aman Thapa", parentName: "Subedar Major Thapa", review: "Doon Defence College completely changed my outlook towards discipline. The teachers break down math concepts, and the GTO training grounds are identical to the actual SSB board.", rating: 5 },
+    { id: "t1", studentName: "Cadet Aman Thapa", parentName: "Subedar Major Thapa", review: "Dehradun Defence Academy completely changed my outlook towards discipline. The teachers break down math concepts, and the GTO training grounds are identical to the actual SSB board.", rating: 5 },
     { id: "t2", studentName: "Lt. Pooja Negi", parentName: "Mrs. Savitri Negi", review: "The academic rigor combined with daily physical sessions enabled me to clear CDS on my first attempt. Teachers were available 24/7 in the library for doubts.", rating: 5 },
     { id: "t3", studentName: "Sub-Lt. Vikas Rawat", parentName: "Mr. Ramesh Rawat", review: "Highly recommended for SSB. The mock interviews by retired Brigadiers give you absolute confidence and eliminate stage fear.", rating: 5 }
   ],
   students: [
-    { id: "s1", cadetName: "Rohit Sen", rank: "NDA 151 Course", selectionYear: "2025", achievement: "Air Force Cadet", quote: "Dream big, prepare hard, and let Doon Defence College guide your wings." },
+    { id: "s1", cadetName: "Rohit Sen", rank: "NDA 151 Course", selectionYear: "2025", achievement: "Air Force Cadet", quote: "Dream big, prepare hard, and let Dehradun Defence Academy guide your wings." },
     { id: "s2", cadetName: "Anjali Joshi", rank: "OTA Chennai (CDS Entry)", selectionYear: "2026", achievement: "Lieutenant (Army)", quote: "The mock interviews and SSB psychology feedback here shaped my military mindset." }
   ],
   blogs: [
@@ -71,11 +71,11 @@ const BACKUP_DATA = {
     { id: "b2", title: "SSB GTO Tasks: The Golden Rules to Stand Out", category: "SSB Tips", summary: "Learn what the GTO looks for in candidates during group discussion, progressive group task, and command tasks.", author: "Col. Rajesh Gupta", date: "June 25, 2026", content: "The Group Testing Officer (GTO) evaluates your social adaptability..." }
   ],
   settings: {
-    seoTitle: "Doon Defence College | India's Top Defence Academy",
+    seoTitle: "Dehradun Defence Academy | India's Top Defence Academy",
     seoMetaDescription: "Professional Defence Coaching Institute providing premium academic prep and SSB training in Dehradun.",
     whatsapp: "+919876543210",
     phone: "+911352458899",
-    email: "admissions@doondefencecollege.in",
+    email: "admissions@dehradundefenceacademy.in",
     address: "Premium Campus, Rajpur Road, Dehradun, Uttarakhand, Pin-248001"
   }
 };
@@ -231,7 +231,7 @@ export default function HomePage() {
                 <div className="absolute top-28 left-10 z-40 flex items-center gap-3">
                   <span className="w-2.5 h-2.5 rounded-full bg-accent animate-ping" />
                   <span className="text-[10px] text-white uppercase tracking-[0.25em] font-semibold font-display">
-                    Doon Defence College Cinematic Presentation
+                    Dehradun Defence Academy Cinematic Presentation
                   </span>
                 </div>
               </div>
@@ -899,7 +899,7 @@ export default function HomePage() {
                     <div className="relative text-center p-6 flex flex-col items-center">
                       <MapPin className="w-8 h-8 text-secondary mb-2" />
                       <span className="text-xs uppercase font-bold tracking-wider text-primary">Rajpur Road, Dehradun</span>
-                      <span className="text-[10px] text-gray-500 mt-1">Doon Defence College Main Headquarters</span>
+                      <span className="text-[10px] text-gray-500 mt-1">Dehradun Defence Academy Main Headquarters</span>
                     </div>
                   </div>
 
@@ -921,7 +921,7 @@ export default function HomePage() {
                       <Mail className="w-5 h-5 text-accent shrink-0" />
                       <div className="flex flex-col">
                         <span className="text-gray-400">Officer Email Address</span>
-                        <a href="mailto:admissions@doondefencecollege.in" className="text-primary font-bold">{data.settings.email}</a>
+                        <a href="mailto:admissions@dehradundefenceacademy.in" className="text-primary font-bold">{data.settings.email}</a>
                       </div>
                     </div>
 

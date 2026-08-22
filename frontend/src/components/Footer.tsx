@@ -21,10 +21,10 @@ export default function Footer() {
             </div>
             <div className="flex flex-col">
               <span className="text-base font-bold font-display tracking-widest text-white uppercase">
-                Doon Defence
+                Dehradun Defence
               </span>
               <span className="text-[10px] text-gray-400 tracking-wider font-light uppercase">
-                College & Academy
+                Academy
               </span>
             </div>
           </Link>
@@ -104,8 +104,8 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-2.5">
               <Mail className="w-5 h-5 text-accent shrink-0" />
-              <a href="mailto:admissions@doondefencecollege.in" className="hover:text-white transition-colors">
-                admissions@doondefencecollege.in
+              <a href="mailto:admissions@dehradundefenceacademy.in" className="hover:text-white transition-colors">
+                admissions@dehradundefenceacademy.in
               </a>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 border-t border-white/5 mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500 z-10 relative">
-        <p>© 2026 Doon Defence College. All Rights Reserved.</p>
+        <p>© 2026 Dehradun Defence Academy. All Rights Reserved.</p>
         <div className="flex items-center gap-4">
           <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
           <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>

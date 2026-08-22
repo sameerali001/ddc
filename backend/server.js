@@ -30,7 +30,7 @@ app.use("/api/public", require("./routes/public"));
 // Default Root Route
 app.get("/", (req, res) => {
   res.json({
-    message: "Doon Defence College API Server is running.",
+    message: "Dehradun Defence Academy API Server is running.",
     databaseMode: require("./db").db.isFallback() ? "Local JSON Fallback" : "MongoDB"
   });
 });

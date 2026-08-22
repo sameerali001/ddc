@@ -44,10 +44,10 @@ export default function Header() {
           </div>
           <div className="flex flex-col">
             <span className="text-sm md:text-base font-bold font-display tracking-widest text-white uppercase group-hover:text-accent transition-colors duration-300">
-              Doon Defence
+              Dehradun Defence
             </span>
             <span className="text-[10px] text-gray-400 tracking-wider font-light uppercase">
-              College & Academy
+              Academy
             </span>
           </div>
         </Link>

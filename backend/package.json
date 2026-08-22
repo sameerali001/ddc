@@ -1,7 +1,7 @@
 {
   "name": "doon-defence-backend",
   "version": "1.0.0",
-  "description": "Backend for Doon Defence College Cinematic Website",
+  "description": "Backend for Dehradun Defence Academy Cinematic Website",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

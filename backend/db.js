@@ -50,7 +50,7 @@ const writeLocalJSON = (filename, data) => {
 
 // Default Seeds
 const defaultHero = {
-  academyName: "DOON DEFENCE COLLEGE",
+  academyName: "DEHRADUN DEFENCE ACADEMY",
   tagline: "WHERE DISCIPLINE MEETS DESTINY",
   description: "India's premier defence training academy. Empowering NDA, CDS, AFCAT, and SSB aspirants through world-class academic preparation, rigorous physical training, and character development.",
   ctaPrimaryText: "Apply Now",
@@ -60,9 +60,9 @@ const defaultHero = {
 const defaultAbout = {
   mission: "To nurture and guide young patriots, instilling core military values of integrity, loyalty, and courage, and ensuring they excel both academically and physically to lead the Indian Armed Forces.",
   vision: "To be recognized globally as the ultimate nurturing ground for future defence leaders, combining top-class education, premium physical conditioning, and leadership training.",
-  directorMessage: "At Doon Defence College, we don't just train students to pass exams. We build their character, physical endurance, and intellectual edge to ensure they stand tall as future commanders of India's Army, Navy, and Air Force.",
+  directorMessage: "At Dehradun Defence Academy, we don't just train students to pass exams. We build their character, physical endurance, and intellectual edge to ensure they stand tall as future commanders of India's Army, Navy, and Air Force.",
   directorName: "Brig. (Retd.) S. P. Rawat",
-  directorTitle: "Managing Director, Doon Defence College",
+  directorTitle: "Managing Director, Dehradun Defence Academy",
   stats: [
     { label: "Selections", value: "2,500+" },
     { label: "Expert Officers", value: "15+" },
@@ -91,12 +91,12 @@ const defaultGallery = [
 ];
 
 const defaultTestimonials = [
-  { id: "t1", studentName: "Cadet Aman Thapa", parentName: "Subedar Major Thapa", review: "Doon Defence College completely changed my outlook towards discipline. The teachers break down math concepts, and the GTO training grounds are identical to the actual SSB board.", rating: 5 },
+  { id: "t1", studentName: "Cadet Aman Thapa", parentName: "Subedar Major Thapa", review: "Dehradun Defence Academy completely changed my outlook towards discipline. The teachers break down math concepts, and the GTO training grounds are identical to the actual SSB board.", rating: 5 },
   { id: "t2", studentName: "Lt. Pooja Negi", parentName: "Mrs. Savitri Negi", review: "The academic rigor combined with daily physical sessions enabled me to clear CDS on my first attempt. Teachers were available 24/7 in the library for doubts.", rating: 5 }
 ];
 
 const defaultSuccessStories = [
-  { id: "s1", cadetName: "Rohit Sen", rank: "NDA 151 Course", selectionYear: "2025", achievement: "Air Force Cadet", quote: "Dream big, prepare hard, and let Doon Defence College guide your wings." },
+  { id: "s1", cadetName: "Rohit Sen", rank: "NDA 151 Course", selectionYear: "2025", achievement: "Air Force Cadet", quote: "Dream big, prepare hard, and let Dehradun Defence Academy guide your wings." },
   { id: "s2", cadetName: "Anjali Joshi", rank: "OTA Chennai (CDS Entry)", selectionYear: "2026", achievement: "Lieutenant (Army)", quote: "The mock interviews and SSB psychology feedback here shaped my military mindset." }
 ];
 
@@ -106,11 +106,11 @@ const defaultBlogs = [
 ];
 
 const defaultSettings = {
-  seoTitle: "Doon Defence College | India's Top Defence Academy",
+  seoTitle: "Dehradun Defence Academy | India's Top Defence Academy",
   seoMetaDescription: "Professional Defence Coaching Institute providing premium academic prep and SSB training in Dehradun.",
   whatsapp: "+919876543210",
   phone: "+911352458899",
-  email: "admissions@doondefencecollege.in",
+  email: "admissions@dehradundefenceacademy.in",
   address: "Premium Campus, Rajpur Road, Dehradun, Uttarakhand, Pin-248001"
 };
 

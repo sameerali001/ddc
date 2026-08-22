@@ -17,7 +17,7 @@ async function getAdminUser(email) {
       const hashedPassword = await bcrypt.hash("admin123", salt);
       const admin = {
         id: "u-1",
-        email: "admin@doondefence.com",
+        email: "admin@dehradundefence.com",
         password: hashedPassword,
         name: "Director Administrator"
       };
@@ -35,11 +35,11 @@ async function getAdminUser(email) {
     const UserModel = mongoose.models.User || mongoose.model("User", UserSchema);
     
     let user = await UserModel.findOne({ email });
-    if (!user && email === "admin@doondefence.com") {
+    if (!user && email === "admin@dehradundefence.com") {
       const salt = await bcrypt.genSalt(10);
       const hashedPassword = await bcrypt.hash("admin123", salt);
       user = await UserModel.create({
-        email: "admin@doondefence.com",
+        email: "admin@dehradundefence.com",
         password: hashedPassword,
         name: "Director Administrator"
       });

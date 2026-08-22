@@ -1,6 +1,6 @@
 @echo off
 echo ========================================================
-echo DOON DEFENCE COLLEGE - PREMIUM WEBSITE STARTUP SCRIPT
+echo DEHRADUN DEFENCE ACADEMY - PREMIUM WEBSITE STARTUP SCRIPT
 echo ========================================================
 echo.
 echo [1/2] Launching Express Backend Server (Port 5000)...

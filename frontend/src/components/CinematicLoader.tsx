@@ -121,7 +121,7 @@ export default function CinematicLoader({ onComplete }: CinematicLoaderProps) {
 
             {/* Slogan */}
             <h2 className="text-xl font-bold tracking-[0.2em] font-display text-accent mb-2 uppercase">
-              Doon Defence College
+              Dehradun Defence Academy
             </h2>
 
             {/* Dynamic Loading Text */}

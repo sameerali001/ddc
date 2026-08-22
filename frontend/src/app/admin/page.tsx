@@ -13,7 +13,7 @@ export default function AdminPage() {
   // Authentication states
   const [token, setToken] = useState<string | null>(null);
   const [isClient, setIsClient] = useState(false);
-  const [loginForm, setLoginForm] = useState({ email: "admin@doondefence.com", password: "admin123" });
+  const [loginForm, setLoginForm] = useState({ email: "admin@dehradundefence.com", password: "admin123" });
   const [authError, setAuthError] = useState("");
   const [activeTab, setActiveTab] = useState("dashboard");
   const [isDemoMode, setIsDemoMode] = useState(false);
@@ -106,14 +106,14 @@ export default function AdminPage() {
       }
     } catch (err) {
       // Demo authentication mode bypass
-      if (loginForm.email === "admin@doondefence.com" && loginForm.password === "admin123") {
+      if (loginForm.email === "admin@dehradundefence.com" && loginForm.password === "admin123") {
         const dummyToken = "demo-sandbox-token-xyz";
         localStorage.setItem("adminToken", dummyToken);
         setToken(dummyToken);
         setIsDemoMode(true);
         fetchAdminData();
       } else {
-        setAuthError("Offline: Please log in using credentials admin@doondefence.com / admin123");
+        setAuthError("Offline: Please log in using credentials admin@dehradundefence.com / admin123");
       }
     }
   };
@@ -253,7 +253,7 @@ export default function AdminPage() {
               CMS Admin Access
             </h1>
             <p className="text-gray-400 text-xs tracking-wider uppercase">
-              Doon Defence College Portal
+              Dehradun Defence Academy Portal
             </p>
           </div>
 
@@ -272,7 +272,7 @@ export default function AdminPage() {
                 value={loginForm.email}
                 onChange={(e) => setLoginForm({ ...loginForm, email: e.target.value })}
                 className="px-4 py-3 rounded bg-white/5 border border-white/10 text-xs focus:outline-none focus:border-accent text-white"
-                placeholder="admin@doondefence.com"
+                placeholder="admin@dehradundefence.com"
               />
             </div>
             <div className="flex flex-col gap-1.5">
@@ -312,7 +312,7 @@ export default function AdminPage() {
         <div className="flex items-center gap-3">
           <Shield className="w-6 h-6 text-accent" />
           <div>
-            <h1 className="text-base font-bold tracking-wider font-display uppercase">Doon Defence Admin</h1>
+            <h1 className="text-base font-bold tracking-wider font-display uppercase">Dehradun Defence Admin</h1>
             {isDemoMode && (
               <span className="text-[9px] bg-amber-500/10 text-amber-400 font-bold uppercase tracking-wider px-2 py-0.5 rounded border border-amber-500/20">
                 Sandbox Demo Mode

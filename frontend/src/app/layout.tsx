@@ -15,11 +15,11 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Doon Defence College | Premium Defence Coaching Institute",
+  title: "Dehradun Defence Academy | Premium Defence Coaching Institute",
   description:
     "Inspiring and training India's future officers through discipline, top-tier academic coaching, and leadership mentoring for NDA, CDS, AFCAT, and SSB.",
   keywords: [
-    "Doon Defence College",
+    "Dehradun Defence Academy",
     "NDA Coaching",
     "CDS Coaching",
     "AFCAT Preparation",
